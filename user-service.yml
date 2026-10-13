@@ -4,5 +4,5 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;
     username: sa
-    password: sa
-    # password: '{cipher}AQBQQOe59lB6OAXjakWe50URv3p1CDemKhSPDmPI+ZBl8L+2xvKlvCTXGTfgkoQOfaWtBZvTvYT1dM5QL9vt8Vpl8mfuLwFmquZrfclqaTtP7ReP9hdxa9EsZSbUbvlKeBTUjpQdofKd1NCHWq9ysu4pwYk0JDo+DRA+Z4KUqUADFUK526MZTVYIGdNEfpQ8muw5UjxxuMrUBPCFXbc+IkmS9c2K5g6HEopSA8g2Sz7gqdUx0ZEHK8HM24Vn2Bn6fjR0e7v7YbYv7vp/UpeRLxxJFrP4Yfe9niiKLfzVi5vZ+7KTNYj0PRgOzylzTTSDtmqvmztbHTbHug9RHBQwZyxWaFXuR0mFA3l+S4tmMjPvngR8IXx1Ixr3yThUF+S7wX4='
+    #password: sa
+    password: '{cipher}AQApqS1huC4PB76OEhctONxwhbg/r1il7B6kOWcDP4bJw0gqeUVqmiOt9R1pzoyNnB1++BNH9OUTA6baDgMhLOg0Nvc+kBGkEM/Oz6dI3kOJcaw96MP/vcyzrlo/5L/grRh3V+GJ857ilrE4ZGQ9psxbhkeG65AkR84Ut+m0Q01GgQVWFPaYC5ah7UsyzK9FjHPDncpjL20vFyD48vh7v9jyUjCLkd6f/bX3yImhMZYCN1cyVMvZSyIl2sqHfx0u4M22/DRxkyoEwj6g9L0AEKaATNzdD3RpT+MwqL5uv1bBJ/n4JKEnBWyw5nNOaMGnjOezz0d2erVJhbpXcdtu3idEtzokw48no9+ySTPmHs7fua7LWayNyML5qmoCPvsW0xI='
