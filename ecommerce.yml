@@ -1,8 +1,8 @@
 token:
   expiration: 86400000 # 24시간 
-  secret: this is a default secret from config service
+  secret: this is a default secret from config service -bus refresh test
 
 
 gateway:
-  ip: 1.2.3.4 # 테스트
+  ip: 131.2.3.4 # 테스트
   
