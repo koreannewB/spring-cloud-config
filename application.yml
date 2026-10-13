@@ -1,0 +1,3 @@
+token:
+  expiration: 86400000 # 24시간 
+  secret: this is a default secret from config service -bus refresh test
