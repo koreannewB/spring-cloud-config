@@ -6,3 +6,6 @@ spring:
     username: sa
     #password: sa
     password: '{cipher}AQApqS1huC4PB76OEhctONxwhbg/r1il7B6kOWcDP4bJw0gqeUVqmiOt9R1pzoyNnB1++BNH9OUTA6baDgMhLOg0Nvc+kBGkEM/Oz6dI3kOJcaw96MP/vcyzrlo/5L/grRh3V+GJ857ilrE4ZGQ9psxbhkeG65AkR84Ut+m0Q01GgQVWFPaYC5ah7UsyzK9FjHPDncpjL20vFyD48vh7v9jyUjCLkd6f/bX3yImhMZYCN1cyVMvZSyIl2sqHfx0u4M22/DRxkyoEwj6g9L0AEKaATNzdD3RpT+MwqL5uv1bBJ/n4JKEnBWyw5nNOaMGnjOezz0d2erVJhbpXcdtu3idEtzokw48no9+ySTPmHs7fua7LWayNyML5qmoCPvsW0xI='
+
+order-service:
+  url: http://localhost:8080/order-service/%s/orders
