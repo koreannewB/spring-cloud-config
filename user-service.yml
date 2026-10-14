@@ -5,7 +5,8 @@ spring:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;
     username: sa
     #password: sa
-    password: '{cipher}AQApqS1huC4PB76OEhctONxwhbg/r1il7B6kOWcDP4bJw0gqeUVqmiOt9R1pzoyNnB1++BNH9OUTA6baDgMhLOg0Nvc+kBGkEM/Oz6dI3kOJcaw96MP/vcyzrlo/5L/grRh3V+GJ857ilrE4ZGQ9psxbhkeG65AkR84Ut+m0Q01GgQVWFPaYC5ah7UsyzK9FjHPDncpjL20vFyD48vh7v9jyUjCLkd6f/bX3yImhMZYCN1cyVMvZSyIl2sqHfx0u4M22/DRxkyoEwj6g9L0AEKaATNzdD3RpT+MwqL5uv1bBJ/n4JKEnBWyw5nNOaMGnjOezz0d2erVJhbpXcdtu3idEtzokw48no9+ySTPmHs7fua7LWayNyML5qmoCPvsW0xI='
+    password: '{cipher}AQBC7nM4R2QZwsCYV/ux1q7CjaL8W9Hnmjwe0pi0OY8Tc4PjbRIzPpOLyrDkRZxeJkGPoWKXEluK9oVP6hJYfVNG3z+4rbp92NOdITQxcDrQlscxyvOYdq+x6wAUUGW59m6rprY8dlOYmOPwUmzuduhXOvUXYpwHDFEVlm4W7x8Stk2Hcznp23nTzsOvUNHydVgbKlwwX0TYqXz74+brFnsHlKBwJzVqOjK6b2ePoq6NXnxZ4iYbUr2GBmijCSC3b+m7Qu7PP0JbGcbnRl77p9+Fmk+CTMAmjutHg5cG9cDn9U9+DPcIrRerD4CispiToCKLys7xpy21lMksblszSLbt0V2eXo+cl9qJZcgX6PI5L7UjsVFEARV0sCgGrExYNrs='
 
 order-service:
-  url: http://localhost:8080/order-service/%s/orders
+  #url: http://localhost:8080/order-service/%s/orders #  하드코딩
+  url: http://order-service/order-service/%s/orders #  유레카에등록된 서비스 이름을 사용하여 동적으로 주문 서비스 url 생성
