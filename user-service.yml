@@ -10,3 +10,8 @@ spring:
 order-service:
   #url: http://localhost:8080/order-service/%s/orders #  하드코딩
   url: http://order-service/order-service/%s/orders #  유레카에등록된 서비스 이름을 사용하여 동적으로 주문 서비스 url 생성
+
+
+logging:
+  level:
+    com.example.userservice.client: DEBUG
