@@ -5,7 +5,7 @@ spring:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;
     username: sa
     #password: sa
-    password: '{cipher}AQBC7nM4R2QZwsCYV/ux1q7CjaL8W9Hnmjwe0pi0OY8Tc4PjbRIzPpOLyrDkRZxeJkGPoWKXEluK9oVP6hJYfVNG3z+4rbp92NOdITQxcDrQlscxyvOYdq+x6wAUUGW59m6rprY8dlOYmOPwUmzuduhXOvUXYpwHDFEVlm4W7x8Stk2Hcznp23nTzsOvUNHydVgbKlwwX0TYqXz74+brFnsHlKBwJzVqOjK6b2ePoq6NXnxZ4iYbUr2GBmijCSC3b+m7Qu7PP0JbGcbnRl77p9+Fmk+CTMAmjutHg5cG9cDn9U9+DPcIrRerD4CispiToCKLys7xpy21lMksblszSLbt0V2eXo+cl9qJZcgX6PI5L7UjsVFEARV0sCgGrExYNrs='
+    password: '{cipher}AQAy/fPoofgzqQiiHSIxUHlNN/YNlXe2DkmJPdJ8t3c8WDaFX3CDgTi8XTaeAhp39fJtanBSZQugGpeNL28SyFTKbRae4/QEVE0+/tyYZ8umUnimpBcRSc0XfNAtgfrri6Slqk1sk17i6R1aN4LrIJHv22rI8wsKfoGoloJ+FI0Q52428W4z1V6I8S9JgqHvfv8F7ZVF8OunKF7D4W+Duz8uwid/n2FSQbqXkJLvf9KMvPtqfiqrNA1AH0bKZXwXZqHnarYbo542GHacCAOyaX95rS6/Y//5PsJWgddYVP70v/SnMJQNGji8fMoH4+hoURR3JbfiYamt41pfXYNDJCte74ZAaIw1OKqmciGeBXZVA93qc8Aj5cGg8Q49Bl6U7Sk='
 
 order-service:
   #url: http://localhost:8080/order-service/%s/orders #  하드코딩
@@ -15,3 +15,9 @@ order-service:
 logging:
   level:
     com.example.userservice.client: DEBUG
+
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      pattern: '%a "%r" %s'
