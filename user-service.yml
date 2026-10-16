@@ -16,9 +16,11 @@ order-service:
 
 logging:
   level:
+    org.springframework.security: DEBUG
     com.example.userservice.client: DEBUG
-    pattern:
-      console: "%-5level - %msg%n"
+  # 패턴 설정을 안해도 기본 패턴에 traceId/spanId가 출력됨
+#  pattern:
+#    correlation: '[${spring.application.name:},%X{traceId:-},%X{spanId:-}] '
 
 
 server:
