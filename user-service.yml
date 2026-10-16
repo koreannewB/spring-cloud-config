@@ -8,16 +8,17 @@ spring:
     password: '{cipher}AQAy/fPoofgzqQiiHSIxUHlNN/YNlXe2DkmJPdJ8t3c8WDaFX3CDgTi8XTaeAhp39fJtanBSZQugGpeNL28SyFTKbRae4/QEVE0+/tyYZ8umUnimpBcRSc0XfNAtgfrri6Slqk1sk17i6R1aN4LrIJHv22rI8wsKfoGoloJ+FI0Q52428W4z1V6I8S9JgqHvfv8F7ZVF8OunKF7D4W+Duz8uwid/n2FSQbqXkJLvf9KMvPtqfiqrNA1AH0bKZXwXZqHnarYbo542GHacCAOyaX95rS6/Y//5PsJWgddYVP70v/SnMJQNGji8fMoH4+hoURR3JbfiYamt41pfXYNDJCte74ZAaIw1OKqmciGeBXZVA93qc8Aj5cGg8Q49Bl6U7Sk='
 
 order-service:
-  #url: http://localhost:8080/order-service/%s/orders #  하드코딩
-  url: http://order-service/order-service/%s/orders #  유레카에등록된 서비스 이름을 사용하여 동적으로 주문 서비스 url 생성
+  # url: http://127.0.0.1:8080/order-service/%s/orders # 하드코딩
+  url: http://order-service/order-service/%s/orders # 유레카에 등록된 서비스 이름을 사용하여 동적으로 주문 서비스 URL 생성
   exception:
-    order-not-found: User's orders is empty
+    order-is-empty: User's orders is empty
 
 
 logging:
   level:
     com.example.userservice.client: DEBUG
-
+    pattern:
+      console: "%-5level - %msg%n"
 
 
 server:
